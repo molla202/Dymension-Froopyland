@@ -44,11 +44,10 @@ dymd config chain-id 35-C
 dymd init molla202 --chain-id 35-C
 
 
-wget -O $HOME/.dymension/config/genesis.json https://testnet-files.itrocket.net/dymension/genesis.json
-wget -O $HOME/.dymension/config/addrbook.json https://testnet-files.itrocket.net/dymension/addrbook.json
+wget -O $HOME/.dymension/config/genesis.json https://github.com/dymensionxyz/testnets/blob/main/dymension-hub/froopyland/genesis.json
 
 
-seeds="284313184f63d9f06b218a67a0e2de126b64258d@seeds.silknodes.io:26157"
+seeds="284313184f63d9f06b218a67a0e2de126b64258d@seeds.silknodes.io:26157,92308bad858b8886e102009bbb45994d57af44e7@rpc-t.dymension.nodestake.top:666,ade4d8bc8cbe014af6ebdf3cb7b1e9ad36f412c0@testnet-seeds.polkachu.com:20556,"
 sed -i -e "s/^seeds *=.*/seeds = \"$SEEDS\"/; s/^persistent_peers *=.*/persistent_peers = \"$PEERS\"/" $HOME/.dymension/config/config.toml
 
 

@@ -47,7 +47,7 @@ dymd init $MONIKER --chain-id froopyland_100-1
 wget -O genesis.json https://raw.githubusercontent.com/molla202/Dymension-Froopyland/main/genesis.json --inet4-only
 mv genesis.json ~/.dymension/config
 
-wget -O addrbook.json https://snapshots.polkachu.com/testnet-addrbook/dymension/addrbook.json --inet4-only
+wget -O addrbook.json https://raw.githubusercontent.com/molla202/Dymension-Froopyland/main/addrbook.json --inet4-only
 mv addrbook.json ~/.dymension/config
 
 

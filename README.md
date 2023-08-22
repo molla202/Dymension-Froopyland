@@ -39,7 +39,6 @@ make install
 
 
 dymd config node tcp://localhost:${DYMENSION_PORT}657
-dymd config keyring-backend test
 dymd config chain-id froopyland_100-1
 dymd init $MONIKER --chain-id froopyland_100-1
 

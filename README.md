@@ -40,8 +40,8 @@ make install
 
 dymd config node tcp://localhost:${DYMENSION_PORT}657
 dymd config keyring-backend test
-dymd config chain-id 35-C
-dymd init molla202 --chain-id 35-C
+dymd config chain-id froopyland_100-1
+dymd init molla202 --chain-id froopyland_100-1
 
 
 wget -O $HOME/.dymension/config/genesis.json https://github.com/dymensionxyz/testnets/blob/main/dymension-hub/froopyland/genesis.json

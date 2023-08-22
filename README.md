@@ -99,7 +99,7 @@ EOF
 
 sudo systemctl daemon-reload
 sudo systemctl enable dymd
-sudo systemctl restart dymd && sudo journalctl -u dymd -f
+sudo systemctl restart dymd && sudo journalctl -u dymd -fo cat
 ```
 # cüzdan olusturuyoruz yada import ediyoruz
 ```

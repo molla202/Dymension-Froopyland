@@ -41,10 +41,14 @@ make install
 dymd config node tcp://localhost:${DYMENSION_PORT}657
 dymd config keyring-backend test
 dymd config chain-id froopyland_100-1
-dymd init molla202 --chain-id froopyland_100-1
+dymd init $MONIKER --chain-id froopyland_100-1
 
 
-wget -O $HOME/.dymension/config/genesis.json https://github.com/dymensionxyz/testnets/blob/main/dymension-hub/froopyland/genesis.json
+wget -O genesis.json https://snapshots.polkachu.com/testnet-genesis/dymension/genesis.json --inet4-only
+mv genesis.json ~/.dymension/config
+
+wget -O addrbook.json https://snapshots.polkachu.com/testnet-addrbook/dymension/addrbook.json --inet4-only
+mv addrbook.json ~/.dymension/config
 
 
 seeds="284313184f63d9f06b218a67a0e2de126b64258d@seeds.silknodes.io:26157,92308bad858b8886e102009bbb45994d57af44e7@rpc-t.dymension.nodestake.top:666,ade4d8bc8cbe014af6ebdf3cb7b1e9ad36f412c0@testnet-seeds.polkachu.com:20556,"

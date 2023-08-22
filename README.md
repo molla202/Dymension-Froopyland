@@ -92,9 +92,6 @@ WantedBy=multi-user.target
 EOF
 
 
-dymd tendermint unsafe-reset-all --home $HOME/.dymension
-curl https://testnet-files.itrocket.net/dymension/snap_dymension.tar.lz4 | lz4 -dc - | tar -xf - -C $HOME/.dymension
-
 
 sudo systemctl daemon-reload
 sudo systemctl enable dymd
@@ -117,5 +114,5 @@ dymd tx staking create-validator \
   --min-self-delegation "1" \
   --pubkey  $(dymd tendermint show-validator) \
   --moniker $MONIKER \
-  --chain-id 35-C
+  --chain-id froopyland_100-1
   ```

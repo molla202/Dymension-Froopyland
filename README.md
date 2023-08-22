@@ -26,7 +26,7 @@ go version
 ```
 echo "export WALLET="cüzdan-adı"" >> $HOME/.bash_profile
 echo "export MONIKER="node-adı"" >> $HOME/.bash_profile
-echo "export DYMENSION_CHAIN_ID="35-C"" >> $HOME/.bash_profile
+echo "export DYMENSION_CHAIN_ID="froopyland_100-1"" >> $HOME/.bash_profile
 echo "export DYMENSION_PORT="32"" >> $HOME/.bash_profile
 source $HOME/.bash_profile
 
@@ -48,8 +48,7 @@ wget -O $HOME/.dymension/config/genesis.json https://testnet-files.itrocket.net/
 wget -O $HOME/.dymension/config/addrbook.json https://testnet-files.itrocket.net/dymension/addrbook.json
 
 
-SEEDS="c26dc8486e8c4817e154812462993ce562cda221@dymension-testnet-seed.itrocket.net:32656"
-PEERS="adf394846dc942b1fd03f6e310eda60b5eda7848@dymension-testnet-peer.itrocket.net:32656"
+seeds="284313184f63d9f06b218a67a0e2de126b64258d@seeds.silknodes.io:26157"
 sed -i -e "s/^seeds *=.*/seeds = \"$SEEDS\"/; s/^persistent_peers *=.*/persistent_peers = \"$PEERS\"/" $HOME/.dymension/config/config.toml
 
 

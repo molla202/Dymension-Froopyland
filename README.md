@@ -27,7 +27,7 @@ go version
 echo "export WALLET="cüzdan-adı"" >> $HOME/.bash_profile
 echo "export MONIKER="node-adı"" >> $HOME/.bash_profile
 echo "export DYMENSION_CHAIN_ID="froopyland_100-1"" >> $HOME/.bash_profile
-echo "export DYMENSION_PORT="32"" >> $HOME/.bash_profile
+echo "export DYMENSION_PORT="33"" >> $HOME/.bash_profile
 source $HOME/.bash_profile
 
 

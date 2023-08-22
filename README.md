@@ -115,5 +115,6 @@ dymd tx staking create-validator \
   --min-self-delegation "1" \
   --pubkey  $(dymd tendermint show-validator) \
   --moniker $MONIKER \
-  --chain-id froopyland_100-1
+  --chain-id froopyland_100-1 \
+  -y
   ```

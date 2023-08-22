@@ -1,9 +1,13 @@
 # Dymension
 ![1500x500](https://user-images.githubusercontent.com/91562185/234884978-f1a6b9f1-5939-422c-af5d-ca66a9feb758.jpg)
 
-# sistem özellikleri
-4cpu 8 ram
-## ÖDÜLSÜZDÜR
+## Sistem Gereksinimleri
+| Bileşenler | Minimum Gereksinimler | 
+| ------------ | ------------ |
+| CPU |	4|
+| RAM	| 8+ GB |
+| Storage	| 500 GB SSD |
+
 
 # update ve kütüphane kuruyoruz
 ```
@@ -29,7 +33,7 @@ source $HOME/.bash_profile
 
 cd $HOME
 rm -rf dymension
-git clone https://github.com/dymensionxyz/dymension.git --branch v0.2.0-beta
+git clone https://github.com/dymensionxyz/dymension.git --branch v1.0.2-beta
 cd dymension
 make install
 

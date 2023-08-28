@@ -94,8 +94,7 @@ sed -i -e "s%^address = \"tcp://0.0.0.0:1317\"%address = \"tcp://0.0.0.0:14617\"
 # Servisi Başlat ve Logları İzle
 echo -e "\e[1;34mServisi başlatma ve logları izleme...\e[0m"
 sudo systemctl start dymd
+echo -e "\e[1;32mKurulum tamamlandı.\e[0m"
 echo -e "\e[1;34mServis başlatıldı. Logları kontrol etmek için aşağıdaki komutu kullanabilirsiniz:\e[0m"
 echo -e "\e[1;36msudo journalctl -u dymd -f --no-hostname -o cat\e[0m"
 } &> /dev/null
-
-echo -e "\e[1;32mKurulum tamamlandı.\e[0m"
